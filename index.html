@@ -2,26 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Четыре картинки</title>
+  <title>Четыре картинки по вертикали</title>
   <style>
     body {
       margin: 0;
       padding: 20px;
       display: flex;
-      justify-content: center;
-      gap: 20px; /* расстояние между картинками */
-      flex-wrap: wrap; /* перенос на новую строку, если экран узкий */
+      flex-direction: column; /* вертикальное расположение */
+      align-items: center;    /* выравнивание по центру */
+      gap: 20px;              /* расстояние между картинками */
       background: #f5f5f5;
     }
     img {
-      width: 200px; /* можно менять размер */
+      width: 250px; /* можно менять размер */
       height: auto;
-      border-radius: 10px; /* скругленные углы (по желанию) */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* тень */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: transform 0.3s;
     }
     img:hover {
-      transform: scale(1.05); /* эффект увеличения при наведении */
+      transform: scale(1.05);
     }
   </style>
 </head>
